@@ -5,6 +5,7 @@ from .environments import (
     SimpleSpreadMPE,
     SimpleCryptoMPE,
     SimpleSpeakerListenerMPE,
+    HetroSpeakerListenerMPE,
     SimpleFacmacMPE,
     SimpleFacmacMPE3a,
     SimpleFacmacMPE6a,
@@ -48,6 +49,8 @@ def make(env_id: str, **env_kwargs):
         env = SimpleCryptoMPE(**env_kwargs)
     elif env_id == "MPE_simple_speaker_listener_v4":
         env = SimpleSpeakerListenerMPE(**env_kwargs)
+    elif env_id == "MPE_hetro_speaker_listener_v4":
+        env = HetroSpeakerListenerMPE(**env_kwargs)
     elif env_id == "MPE_simple_push_v3":
         env = SimplePushMPE(**env_kwargs)
     elif env_id == "MPE_simple_adversary_v3":
@@ -115,6 +118,7 @@ registered_envs = [
     "MPE_simple_spread_v3",
     "MPE_simple_crypto_v3",
     "MPE_simple_speaker_listener_v4",
+    "MPE_hetro_speaker_listener_v4",
     "MPE_simple_push_v3",
     "MPE_simple_adversary_v3",
     "MPE_simple_reference_v3",

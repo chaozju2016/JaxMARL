@@ -6,6 +6,7 @@ from .mpe import (
     SimpleSpreadMPE,
     SimpleCryptoMPE,
     SimpleSpeakerListenerMPE,
+    HetroSpeakerListenerMPE,
     SimplePushMPE,
     SimpleAdversaryMPE,
     SimpleReferenceMPE,
